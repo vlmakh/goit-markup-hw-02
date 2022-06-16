@@ -17,14 +17,14 @@ header {
 }
 
 .navigation {
-    margin: 0 0 0 43px;
+    margin: 0 0 0 0;
     
     font-style: normal;    
 }
 
 .navigation li {
     display: inline;
-    padding-left: 50px;    
+    padding-left: 40px;    
 }
 
 .font-nav {
@@ -58,20 +58,15 @@ header {
     color: #212121;
 }
 
-
-
 .main {
     background: #fff;
     display: flex;
     flex-direction: column;
-
 }
 
-.effective {
-    
+.effective {    
     width: 1600px;
     height: 600px;
-    
     background: #2F303A;
     display: flex;
     flex-direction: column;
@@ -234,4 +229,24 @@ address {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #FFFFFF;
+}
+
+
+/* PORTFOLI0  */
+
+.portfolio {
+    display: flex;
+        flex-direction: row;
+        padding: 30px 215px 0 215px;
+        justify-content: space-between;
+}
+
+.product {
+    background: #fff;
+    width: 370px;
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
