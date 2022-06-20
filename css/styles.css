@@ -1,30 +1,47 @@
 html,
 body {
-    height: 100%;
+    width: 1600px;
     font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    color: #212121  
 }
 
-header {
-    width: 1600px;
+:root {
+    --main-color: #212121;
+    --blue-color: #2196f3;
+    --grey-color: #757575;       
+}
+
+.logo-font {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--blue-color);
+    text-decoration: none;
+}
+
+.logo-header-color{
+    color: black;
+}
+
+.logo-footer-color {
+    color: white;
+}
+
+/* --------------  HEADER  ---------------*/
+.page-header {
     height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #FFFFFF;
-    box-sizing: border-box;
     padding-left: 215px;
-    
-}
-
-.navigation {
-    margin: 0 0 0 0;
-    
-    font-style: normal;    
 }
 
 .navigation li {
     display: inline;
-    padding-left: 40px;    
+    padding-left: 50px;
 }
 
 .font-nav {
@@ -32,40 +49,42 @@ header {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-    
+    letter-spacing: 0.02em; 
+    color: var(--main-color);      
 }
 
-.font-nav:hover {color: #2196F3;}
+.font-nav:hover, 
+.font-nav:focus {color: var(--blue-color)}
 
-.contacts {
-    width: 800px;
-    
-    font-style: normal;
-    display: flex;
-    justify-content: center;
+.font-nav.current {
+    color: var(--blue-color)
 }
 
-.contacts li {
-    display: inline;
-    padding-left: 50px;
+.font-contacts {
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--grey-color);
 }
 
-.main {
-    background: #fff;
-    display: flex;
-    flex-direction: column;
+.font-contacts:hover,
+.font-contacts:focus {color: var(--blue-color)}
+
+.contacts {
+    margin-left:250px;
 }
+
+.contacts li {
+    display: inline;
+    padding-left: 50px;    
+}
+
+
+/* --------------  HERO  ---------------*/
 
 .effective {    
-    width: 1600px;
     height: 600px;
     background: #2F303A;
     display: flex;
@@ -74,114 +93,7 @@ header {
     justify-content: center;
 }
 
-.but_order {
-    width: 200px;
-    height: 50px;
-    margin-top: 30px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    color: #FFFFFF;
-}
-
-.facts {
-    
-    left: 0px;
-    top: 680px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.font-fact-name {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    line-height: 1.14;
-    color: #212121;
-}
-
-.font-fact-descr {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: #757575;
-}
-
-.details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 94px;
-   padding-left: 215px;
-   padding-right: 215px;
-}
-
-.detail {
-    width: 275px;
-    height: 100px;
-}
-
-h2 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-    margin-top: 94px;
-}
-
-.whatwedo {
-    display: flex;
-    flex-direction: row;
-    padding: 50px 215px 94px 215px;
-    justify-content: space-between;
-}
-
-.command {    
-    width: 1600px;
-    height: 648px;
-    background: #F5F4FA;
-    display: flex;
-    flex-direction: column;
-}
-
-.people {
-    display: flex;
-    flex-direction: row;
-    padding: 50px 215px 94px 215px;
-    justify-content: space-between;
-}
-
-
-.person {
-    background: #fff;
-    width: 270px;
-    height: 368px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-
-
-
-
-.font_main {
-    font-style: normal;
+.font-main {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -190,63 +102,165 @@ h2 {
     color: #FFFFFF;
 }
 
+.button {
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;    
+}
+
+.button-order {
+    width: 200px;
+    margin-top: 30px;
+    background: var(--blue-color);
+    color: #FFFFFF;
+}
+
+
+/* --------------  ПРЕИМУЩЕСТВА  ---------------*/
+
+.benefits {  
+    padding-top: 94px;       
+    display: flex;
+    justify-content: center;    
+}
+
+.benefits li {
+    display: inline;
+    margin-right: 30px;
+    width: 270px;
+}
+
+.font-fact-name {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    line-height: 1.14;    
+    text-transform: uppercase;
+}
+
+.font-fact-descr {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--grey-color);
+}
+
+.detail {
+    width: 275px;
+    height: 100px;    
+}
+
+.section-title {    
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;    
+    margin-top: 94px;
+}
+/* --------------  ЧЕМ МЫ ЗАНИМАЕМСЯ  ---------------*/
+.what-we-do {
+    margin: 0 215px 0 215px;
+}
+
+.whatwedo-images {
+    display: flex;
+    justify-content: space-between;    
+} 
+
+/* --------------  НАША КОМАНДА  ---------------*/
+.command { 
+    height: 648px;
+    background: #F5F4FA;   
+    display: flex; 
+    flex-direction: column;
+    margin-top: 94px;
+}
+
+.people {    
+    display: flex;
+    justify-content: center;
+}
+
+.person {
+    background: #FFFFFF;
+    display: inline;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .font-name {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.03em;
-    line-height: 1.19;
-    color: #212121;
+    line-height: 1.19;    
 }
 
 .font-job {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.03em;
     line-height: 1.19;
-    color: #757575;
+    color: var(--grey-color);
 }
 
+/* --------------  FOOTER  ---------------*/
 footer {
-    width: 1600px;
     height: 252px;
-    display: flex;
     padding-left: 215px;
     padding-top: 60px;
-    background: #2F303A;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
+    background: #2F303A;    
 }
-
+ 
 address {
     font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 
 /* PORTFOLI0  */
 
-.portfolio {
+.control-panel {
+    height: 160px;
     display: flex;
-        flex-direction: row;
-        padding: 30px 215px 0 215px;
-        justify-content: space-between;
+    justify-content: center;
 }
 
-.product {
-    background: #fff;
-    width: 370px;
-    height: 404px;
+.button-blue {
+    margin-top: 80px;
+    margin-right: 8px;
+    padding: 0 22px;
+    background: var(--blue-color);
+    color: #FFFFFF;
+}
+
+.button-white {
+    margin-top: 80px;
+    margin-right: 8px;
+    padding: 0 22px;
+    background: #FFFFFF;
+    color: var(--blue-color);
+}
+
+.portfolio {
     display: flex;
-    flex-direction: column;
-    
+    justify-content: center;
+    flex-wrap: wrap;
+}
+ 
+.product {
+    display: inline;
+    margin-right: 30px;
+    border: 1px solid #EEEEEE;
+    margin-bottom: 30px; 
     
 }
