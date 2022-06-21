@@ -1,266 +1,269 @@
-html,
-body {
-    width: 1600px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #FFFFFF;
-    color: #212121  
+:root {
+  --main-text-color: #212121;
+  --blue-color: #2196f3;
+  --grey-color: #757575;
+  --accent-bcg-color: #2f303a;
 }
 
-:root {
-    --main-color: #212121;
-    --blue-color: #2196f3;
-    --grey-color: #757575;       
+html,
+body {
+  background-color: #ffffff;
+  color: var(--main-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .logo-font {
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--blue-color);
-    text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--blue-color);
+  text-decoration: none;
 }
 
-.logo-header-color{
-    color: black;
+.logo-header-color {
+  color: black;
 }
 
 .logo-footer-color {
-    color: white;
+  color: white;
 }
 
-/* --------------  HEADER  ---------------*/
+/* ---------------  HEADER  ----------------*/
 .page-header {
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 215px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 215px;
 }
 
 .navigation li {
-    display: inline;
-    padding-left: 50px;
+  display: inline;
+  padding-left: 50px;
 }
 
 .font-nav {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em; 
-    color: var(--main-color);      
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
 }
 
-.font-nav:hover, 
-.font-nav:focus {color: var(--blue-color)}
+.font-nav:hover,
+.font-nav:focus {
+  color: var(--blue-color);
+}
 
 .font-nav.current {
-    color: var(--blue-color)
+  color: var(--blue-color);
 }
 
 .font-contacts {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--grey-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--grey-color);
 }
 
 .font-contacts:hover,
-.font-contacts:focus {color: var(--blue-color)}
+.font-contacts:focus {
+  color: var(--blue-color);
+}
 
 .contacts {
-    margin-left:250px;
+  margin-left: 250px;
 }
 
 .contacts li {
-    display: inline;
-    padding-left: 50px;    
+  display: inline;
+  padding-left: 50px;
 }
 
+/* ----------------  HERO  -----------------*/
 
-/* --------------  HERO  ---------------*/
+.section {
+  padding-top: 94px;
+  /* border-style: dotted; */
+}
 
-.effective {    
-    height: 600px;
-    background: #2F303A;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.effective {
+  height: 600px;
+  background: var(--accent-bcg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .font-main {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
 }
 
 .button {
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;    
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
 }
 
 .button-order {
-    width: 200px;
-    margin-top: 30px;
-    background: var(--blue-color);
-    color: #FFFFFF;
+  width: 200px;
+  margin-top: 30px;
+  background: var(--blue-color);
+  color: #ffffff;
 }
 
+/* ------------  ПРЕИМУЩЕСТВА  -------------*/
 
-/* --------------  ПРЕИМУЩЕСТВА  ---------------*/
-
-.benefits {  
-    padding-top: 94px;       
-    display: flex;
-    justify-content: center;    
+.benefits {
+  display: flex;
+  justify-content: center;
 }
 
 .benefits li {
-    display: inline;
-    margin-right: 30px;
-    width: 270px;
+  display: inline;
+  margin-right: 30px;
+  width: 270px;
 }
 
 .font-fact-name {
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    line-height: 1.14;    
-    text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: left;
+  text-transform: uppercase;
 }
 
 .font-fact-descr {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: var(--grey-color);
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+  color: var(--grey-color);
 }
 
 .detail {
-    width: 275px;
-    height: 100px;    
+  width: 275px;
+  height: 100px;
 }
 
-.section-title {    
-    font-size: 36px;
-    text-align: center;
-    letter-spacing: 0.03em;    
-    margin-top: 94px;
+.section-title {
+  font-size: 36px;
+  text-align: center;
 }
-/* --------------  ЧЕМ МЫ ЗАНИМАЕМСЯ  ---------------*/
-.what-we-do {
-    margin: 0 215px 0 215px;
-}
+/* ----------  ЧЕМ МЫ ЗАНИМАЕМСЯ  -----------*/
 
 .whatwedo-images {
-    display: flex;
-    justify-content: space-between;    
-} 
-
-/* --------------  НАША КОМАНДА  ---------------*/
-.command { 
-    height: 648px;
-    background: #F5F4FA;   
-    display: flex; 
-    flex-direction: column;
-    margin-top: 94px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 215px 94px 215px;
 }
 
-.people {    
-    display: flex;
-    justify-content: center;
+/* -------------  НАША КОМАНДА  -------------*/
+.command {
+  height: 648px;
+  background: #f5f4fa;
+}
+
+.command ul {
+  /* border-style: dotted; */
+  display: flex;
+  justify-content: center;
 }
 
 .person {
-    background: #FFFFFF;
-    display: inline;
-    margin-right: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+  display: inline;
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .font-name {
-    font-weight: 500;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    line-height: 1.19;    
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.19;
 }
 
 .font-job {
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    line-height: 1.19;
-    color: var(--grey-color);
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.19;
+  color: var(--grey-color);
 }
 
-/* --------------  FOOTER  ---------------*/
-footer {
-    height: 252px;
-    padding-left: 215px;
-    padding-top: 60px;
-    background: #2F303A;    
-}
- 
-address {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+/* --------------  FOOTER  --------------- */
+.footer {
+  height: 252px;
+  padding-left: 215px;
+  padding-top: 60px;
+  background: var(--accent-bcg-color);
 }
 
+.address {
+  width: 230px;
+  padding-top: 20px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+  /* outline: 1px dashed green; */
+}
 
-/* PORTFOLI0  */
+.address ul {
+  list-style: none;
+}
+
+/* -------------- PORTFOLI0  -------------- */
 
 .control-panel {
-    height: 160px;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
-.button-blue {
-    margin-top: 80px;
-    margin-right: 8px;
-    padding: 0 22px;
-    background: var(--blue-color);
-    color: #FFFFFF;
+.button-filter {
+  margin-right: 8px;
+  padding: 0 22px;
+  background: #ffffff;
+  color: var(--blue-color);
 }
 
-.button-white {
-    margin-top: 80px;
-    margin-right: 8px;
-    padding: 0 22px;
-    background: #FFFFFF;
-    color: var(--blue-color);
+.button-filter:hover,
+.button-filter:focus {
+  background: var(--blue-color);
+  color: #ffffff;
 }
 
 .portfolio {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
- 
+
 .product {
-    display: inline;
-    margin-right: 30px;
-    border: 1px solid #EEEEEE;
-    margin-bottom: 30px; 
-    
+  display: inline;
+  margin-right: 30px;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px;
+}
+
+.product a {
+  text-decoration: none;
+  color: var(--main-text-color);
 }

@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Студия</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    
+    
 </head>
 
 <body>
@@ -40,7 +40,7 @@
     </section>
 
     <!-- Преимущества -->
-    <section>   
+    <section class="section">   
         <!-- <h2 hidden="true">Наши преимущества</h2> -->
         <ul class="benefits">
             <li>
@@ -63,7 +63,7 @@
     </section>
 
     <!-- Чем мы занимаемся -->
-    <section class="what-we-do">    
+    <section class="section">    
              
         <h2 class="section-title">Чем мы занимаемся</h2>
         <div class="whatwedo-images">
@@ -74,9 +74,9 @@
     </section>
 
     <!-- Наша команда -->
-    <section class="command">           
+    <section class="section command">           
         <h2 class="section-title">Наша команда</h2>
-        <ul class="people">
+        <ul>
             <li class="person">
                 <img src="./images/com_demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
                 <h4 class="font-name">Игорь Демьяненко</h4>
@@ -101,12 +101,16 @@
     </section>
 </main>
 
-<footer>
+<footer class="footer">
     <a href="./index.html" class="logo-font">Web<span class="logo-footer-color">Studio</span></a>
-    <address>
+    <address class="address">
         <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <p><a href="mailto:info@devstudio.com" class="font-contacts">info@devstudio.com</a></p>
-        <p><a href="tel:+380961111111" class="font-contacts">+38 096 111 11 11</a></p>
+        <div>
+            <ul>
+                <li><a href="mailto:info@devstudio.com" class="font-contacts">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="font-contacts">+38 096 111 11 11</a></li>
+            </ul>
+        </div>
     </address>
 </footer>
     
